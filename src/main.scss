@@ -1,0 +1,7 @@
+.foo {
+    color: blue;
+    &.bar {
+        color: red;
+        transition: width 2s;
+    }
+}
