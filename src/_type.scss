@@ -53,7 +53,7 @@ p {
 
 
 
-@media (min-width: $grid-small) {
+@media screen and (min-width: $grid-small) {
     header {
         text-align: left;
     }

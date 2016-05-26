@@ -21,7 +21,7 @@ article.more-links {
     }
 }
 
-@media (min-width: $grid-small) {
+@media screen and (min-width: $grid-small) {
     article.more-links {
         float: right;
         padding: 0.5rem 1rem;

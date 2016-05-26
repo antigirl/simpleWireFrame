@@ -14,7 +14,7 @@
     display: none;
 }
 
-@media (min-width: $grid-small) {
+@media screen and (min-width: $grid-small) {
     .container {
         padding: 0;
     }

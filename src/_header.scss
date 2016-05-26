@@ -12,8 +12,7 @@
     }
 }
 
-
-@media (min-width: $grid-small) {
+@media screen and (min-width: $grid-small) {
     .heading li:last-child {
         display: block;
     }

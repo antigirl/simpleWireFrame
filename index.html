@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>   <html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>   <html class="lt-ie9"><![endif]-->
+<!--[if IE 9]>   <html class="lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!-->
 <html>
+<!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple Wire Frame</title>
-    <link rel="stylesheet" type="text/css" href="dist/main.css">
+    <!--[if gt IE 8]><!--><link href="dist/main.css" rel="stylesheet"><!--<![endif]-->
+    <!--[if lte IE 8]><link href="dist/ie.css" rel="stylesheet"><![endif]-->
+
 </head>
 <body>
     <div class="container">
@@ -31,14 +39,14 @@
                 <li ><a href="#">Home</a></li>
                 <li><a href="#">eBooks</a></li>
                 <li><a href="#">Magazines</a></li>
-                <li><a href="#">￼￼￼Logo</a></li>
+                <li><a href="#">Logo</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Help</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </nav>
 
-    <section class="column column__content cf">
+    <section class="column column__content">
         <article>
             <header>
                 <h2>Lorem ipsum dolor sit</h2>

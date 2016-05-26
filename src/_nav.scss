@@ -24,14 +24,18 @@ nav {
 }
 
 #navBar:target {
-    display: block;
+    display: table;
 
     & li:first-child {
         border-top: 1px solid $nav-border;
     }
 }
 
-@media (min-width: $grid-small) {
+.lt-ie10 #navBar li {
+    min-height: 2rem;
+}
+
+@media screen and (min-width: $grid-small) {
     .nav-bar__button {
         display: none;
     }
@@ -45,7 +49,7 @@ nav {
             padding: 0.5rem;
             border-bottom: 0;
         }
-        
+
         &:target {
             & li:first-child {
                 border-top: 0;
