@@ -5,37 +5,38 @@
 
     li {
         display: inline-block;
-        padding: 0 2rem;
+        padding: 0 1rem;
         vertical-align: middle;
     }
 }
 
-article.more-links {
-    position: absolute;
-    padding-bottom: 0;
-    bottom: 1rem;
+footer .social-media li {
+    padding: 0 2rem;
 }
 
-.more-links__header {
-    padding-bottom: 0.5rem;
-
-    h3 {
-        font-weight: bold;
-    }
+.social-media__sprite {
+    background-image: url('../src/images/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
 }
-.more-links__list {
-    list-style-position: inside;
-    list-style-type: disc;
 
-    li {
-        padding: 0.2rem 0;
-    }
+.social-media__sprite-google {
+    background-position: -5px -5px;
+}
+
+.social-media__sprite-twitter {
+    background-position: -63px -5px;
+}
+
+.social-media__sprite-facebook {
+    background-position: -5px -63px;
 }
 
 @media (min-width: $grid-small) {
-    article.more-links {
-        float: right;
-        padding: 0.5rem 1rem;
-        position: static;
+    footer .social-media {
+        display: none;
     }
 }

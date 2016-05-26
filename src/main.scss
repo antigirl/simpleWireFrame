@@ -1,8 +1,11 @@
 @import 'variables.scss';
 @import 'reset.scss';
+@import 'utils.scss';
 @import 'grid.scss';
 @import 'type.scss';
+@import 'general.scss';
 @import 'images.scss';
+@import 'header.scss';
 @import 'footer.scss';
 @import '_socialmedia.scss';
 
@@ -10,27 +13,6 @@ html {
   box-sizing: border-box;
 }
 
-a {
-    color: $base-color;
-    text-decoration: none;
-
-    &:visited {
-        color: $base-color;
-    }
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-.cf:before,
-.cf:after {
-    content: "";
-    display: table;
-}
-.cf:after {
-    clear: both;
-}
-.cf {
-    zoom: 1;
 }

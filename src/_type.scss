@@ -8,6 +8,15 @@ body {
     color: $base-color;
 }
 
+a {
+    color: $base-color;
+    text-decoration: none;
+
+    &:visited {
+        color: $base-color;
+    }
+}
+
 h1 {
     font-family: $heading-family;
     font-size: $font-size-h1;

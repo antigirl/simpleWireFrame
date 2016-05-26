@@ -1,5 +1,7 @@
 footer {
     background: $footer-background;
     border: 1px solid $footer-border;
-    height: 40px;
+    border-bottom: none;
+    padding: .5rem;
+    min-height: 5rem;
 }
