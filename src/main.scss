@@ -1,7 +1,15 @@
-.foo {
-    color: blue;
-    &.bar {
-        color: red;
-        transition: width 2s;
-    }
+@import 'variables.scss';
+@import 'reset.scss';
+@import 'grid.scss';
+@import 'type.scss';
+@import 'images.scss';
+@import 'footer.scss';
+@import '_socialmedia.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
