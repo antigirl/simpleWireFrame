@@ -1,0 +1,27 @@
+{
+  "name": "simpleWireFrame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o dist src/*.scss",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 8' -r dist/*",
+    "build": "npm run scss && npm run autoprefixer",
+    "start": "node-sass -o dist src/*.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antigirl/simpleWireFrame"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antigirl/simpleWireFrame/issues"
+  },
+  "homepage": "https://github.com/antigirl/simpleWireFrame",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.7.0",
+    "postcss-cli": "^2.5.2"
+  }
+}
