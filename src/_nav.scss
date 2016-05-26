@@ -1,0 +1,55 @@
+nav {
+    background: $nav-background;
+    border: 1px solid $nav-border;
+    font-size: 2rem;
+    margin: 1.6rem 0;
+}
+
+.nav-bar__button {
+    li {
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+#navBar {
+    display: none;
+    width: 100%;
+
+    li {
+        text-align: center;
+        padding: 0.5rem;
+        border-bottom: 1px solid $nav-border;
+    }
+}
+
+#navBar:target {
+    display: block;
+
+    & li:first-child {
+        border-top: 1px solid $nav-border;
+    }
+}
+
+@media (min-width: $grid-small) {
+    .nav-bar__button {
+        display: none;
+    }
+
+    #navBar {
+        display: table;
+
+        li {
+            display: table-cell;
+            text-align: center;
+            padding: 0.5rem;
+            border-bottom: 0;
+        }
+        
+        &:target {
+            & li:first-child {
+                border-top: 0;
+            }
+        }
+    }
+}
