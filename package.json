@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o dist src/*.scss",
+    "scss": "node-sass --output-style compressed -o dist src/main.scss",
     "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '> 5%, ie 8' -r dist/*",
     "build": "npm run scss && npm run autoprefixer",
-    "start": "node-sass -o dist src/*.scss -w"
+    "start": "node-sass -o dist src/main.scss -w"
   },
   "repository": {
     "type": "git",
